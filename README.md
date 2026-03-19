@@ -34,7 +34,7 @@ public:
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack ( Estudos ) 
 
 ### Linguagens
 <div align="center">
