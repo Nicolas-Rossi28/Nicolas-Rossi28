@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e96c00,50:c62a2a,100:1a1a2e&height=200&section=header&text=Nicolas%20Rossi%20Gariba&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Computer%20Engineering%20%7C%20UTFPR%20Curitiba&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E96C00&center=true&vCenter=true&width=600&lines=Embedded+Systems+%F0%9F%94%A7;Baja+SAE+Electronics+%F0%9F%8F%8E%EF%B8%8F;Computer+Engineering+Student+%F0%9F%8E%93;Always+learning+something+new+%F0%9F%9A%80)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E96C00&center=true&vCenter=true&width=650&lines=Embedded+Systems+%F0%9F%94%A7;IoT+%26+Real-Time+Telemetry+%F0%9F%93%A1;Baja+SAE+Electronics+%F0%9F%8F%8E%EF%B8%8F;Computer+Engineering+Student+%F0%9F%8E%93)](https://git.io/typing-svg)
 
 </div>
 
@@ -25,6 +25,7 @@ public:
         "Sistemas Embarcados",
         "Firmware & Hardware",
         "Desenvolvimento de Software"
+        "Backend"
     };
 
     string status = "🟢 Em busca de estágio!";
@@ -40,19 +41,30 @@ public:
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-004482?style=for-the-badge&logo=cplusplus&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 </div>
 
-### Ferramentas & Plataformas
+### Frameworks & Protocolos
 <div align="center">
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+
+</div>
+
+### Ferramentas
+<div align="center">
+
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
@@ -62,17 +74,31 @@ public:
 
 ---
 
-## 🏁 Equipe Imperador Baja SAE
+## 📡 Sistema de Telemetria — Equipe Imperador
 
-<div align="center">
+> O projeto mais completo que desenvolvi: um sistema **full-stack embarcado** para monitoramento e controle em tempo real do veículo Baja SAE durante competições.
 
-> Membro do **subsistema de eletrônica** da [Equipe Imperador Baja SAE](https://github.com/Equipe-Imperador), desenvolvendo firmware embarcado para competições nacionais.
+```
+ VEÍCULO                          SERVIDOR                   DASHBOARD
+┌─────────┐   MQTT (WiFi)   ┌──────────────┐  WebSocket  ┌──────────────┐
+│  MECU   │ ──────────────► │   Backend    │ ──────────► │  React App   │
+│  (C++)  │                 │  (Node.js +  │             │  Velocidade  │
+│ Sensores│                 │  TypeScript) │             │  RPM / Temp  │
+│ RPM,Vel │                 │  MQTT + WS   │             │  CVT crítica │
+│ Temp CVT│ ◄────────────── │  + Database  │ ◄────────── │  Controles   │
+│  DWIN   │   Comandos      └──────────────┘  Comandos   └──────────────┘
+│ Display │   (Buzina,                        (Buzina,
+└─────────┘    Dif, Box)                       Dif, Box)
+```
 
-</div>
-
-- 🔌 Desenvolvimento de **ECUs (Electronic Control Units)** em C++
-- ⚡ Firmware para sistemas de **freio, partida, proteção e telemetria**
-- 🏆 Preparação para a competição **Baja SAE Nacional 2026**
+### Repositórios do Sistema
+| Repositório | Descrição | Stack |
+|-------------|-----------|-------|
+| [⚙️ imperador-backend](https://github.com/Equipe-Imperador/imperador-backend) | Servidor MQTT + WebSocket + DB | TypeScript / Node.js |
+| [🖥️ imperador-frontend](https://github.com/Equipe-Imperador/imperador-frontend) | Dashboard de telemetria em tempo real | React / TypeScript / Vite |
+| [🔧 FECU Nacional 26](https://github.com/Equipe-Imperador/FECU_NACIONAL26) | Front ECU — controle de freio | C++ |
+| [🔧 MECU Nacional 26](https://github.com/Equipe-Imperador/MECU_NACIONAL26) | Main ECU — núcleo do veículo | C++ |
+| [🔧 RECU Nacional 26](https://github.com/Equipe-Imperador/RECU_NACIONAL26) | Rear ECU — proteção e segurança | C++ |
 
 ---
 
@@ -93,17 +119,6 @@ public:
 
 ---
 
-## 🚀 Projetos em Destaque
-
-| Projeto | Descrição | Tecnologia |
-|---------|-----------|------------|
-| 🔧 [FECU Nacional 26](https://github.com/Equipe-Imperador/FECU_NACIONAL26) | ECU de freio - Baja SAE 2026 | C++ |
-| 🔧 [MECU Nacional 26](https://github.com/Equipe-Imperador/MECU_NACIONAL26) | ECU de motor - Baja SAE 2026 | C++ |
-| 🔧 [RECU Nacional 26](https://github.com/Equipe-Imperador/RECU_NACIONAL26) | ECU de proteção - Baja SAE 2026 | C++ |
-| 🎮 [Deu Jogo](https://github.com/Nicolas-Rossi28/Deu-Jogo) | Projeto pessoal em HTML | HTML/CSS |
-
----
-
 ## 📫 Contato
 
 <div align="center">
@@ -118,7 +133,7 @@ public:
 
 <div align="center">
 
-💼 **Aberto a oportunidades de estágio em Engenharia de Software / Sistemas Embarcados!**
+💼 **Aberto a oportunidades de estágio em Engenharia de Software / Sistemas Embarcados / IoT!**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:c62a2a,100:e96c00&height=120&section=footer" width="100%"/>
 
