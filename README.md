@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e96c00,50:c62a2a,100:1a1a2e&height=200&section=header&text=Nicolas%20Rossi%20Gariba&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Computer%20Engineering%20%7C%20UTFPR%20Curitiba&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E96C00&center=true&vCenter=true&width=650&lines=Embedded+Systems+%F0%9F%94%A7;IoT+%26+Real-Time+Telemetry+%F0%9F%93%A1;Baja+SAE+Electronics+%F0%9F%8F%8E%EF%B8%8F;Computer+Engineering+Student+%F0%9F%8E%93)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E96C00&center=true&vCenter=true&width=650&lines=Computer+Engineering+Student+%F0%9F%8E%93;IoT+%26+Real-Time+Telemetry+%F0%9F%93%A1;Baja+SAE+Electronics+%F0%9F%8F%8E%EF%B8%8F;Embedded+Systems+%F0%9F%94%A7)](https://git.io/typing-svg)
 
 </div>
 
