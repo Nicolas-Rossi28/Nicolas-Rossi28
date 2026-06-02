@@ -24,7 +24,8 @@ public:
         "Automobilismo & Motorsport",
         "Sistemas Embarcados",
         "Firmware & Hardware",
-        "Desenvolvimento de Software"
+        "Desenvolvimento de Software",
+        "Banco de Dados",
         "Backend"
     };
 
